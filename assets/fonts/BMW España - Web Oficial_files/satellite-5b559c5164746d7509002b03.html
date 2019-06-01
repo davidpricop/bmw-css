@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!-- saved from url=(0204)https://assets.adobedtm.com/7e530431ebc6040a493335ce44e66648adfeab7a/scripts/satellite-5b559c5164746d7509002b03.html?26m=undefined&26type=undefined&3D1.0=undefined&3D5695903850402=undefined&3Fid=undefined -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"></head><body>
+    <script>
+      (function(){
+        function escapeForHtml(str){
+          if (!str) return str
+          return str
+            .replace(/\&/g, '&amp;')
+            .replace(/\</g, '&lt;')
+            .replace(/\>/g, '&gt;')
+            .replace(/\"/g, '&quot;')
+            .replace(/\'/g, '&#x27;')
+            .replace(/\//g, '&#x2F;')
+        }
+
+        var regexChars = /[.*+?^${}()|[\]\\]/g;
+        function escapeForRegex(str) {
+          return str.replace(regexChars, "\\$&");
+        }
+
+        function parseQueryString(){
+          var ret = {}, parts = location.search.substring(1).split('&');
+          for (var i = parts.length; i--;) {
+            var vardef = parts[i].split('='), varname = vardef[0], value = vardef[1];
+            ret[varname] = unescape(value);
+          }
+          return ret;
+        }
+
+        var queryParams = parseQueryString();
+
+        var markup = "<script type='text/javascript'>\nvar _pix = document.getElementById('_pix_id_3f1a20a8-2324-b2df-8578-532d659b7874');if (!_pix) { var protocol = '//'; var a = Math.random() * 1000000000000000000; _pix = document.createElement('iframe'); _pix.style.display = 'none'; _pix.setAttribute('src', protocol + 'aax-eu.amazon-adsystem.com/s/iu3?d=generic&ex-fargs=%3Fid%3D3f1a20a8-2324-b2df-8578-532d659b7874%26type%3DUNKNOWN%26m%3D44551&ex-fch=416613&ex-src=www.bmw.es&ex-hargs=v%3D1.0%3Bc%3D5695903850402%3Bp%3D3F1A20A8-2324-B2DF-8578-532D659B7874' + '&cb=' + a); _pix.setAttribute('id','_pix_id_3f1a20a8-2324-b2df-8578-532d659b7874'); document.body.appendChild(_pix);}\n</scr"+"ipt>";
+
+        for (var name in queryParams){
+          var regex = new RegExp('%' + escapeForRegex(name) + '%', 'ig');
+          markup = markup.replace(regex, 
+            escapeForHtml(queryParams[name]));
+        }
+
+        document.write(markup)
+      })();
+    </script><script type="text/javascript">
+var _pix = document.getElementById('_pix_id_3f1a20a8-2324-b2df-8578-532d659b7874');if (!_pix) { var protocol = '//'; var a = Math.random() * 1000000000000000000; _pix = document.createElement('iframe'); _pix.style.display = 'none'; _pix.setAttribute('src', protocol + 'aax-eu.amazon-adsystem.com/s/iu3?d=generic&ex-fargs=undefined3D3f1a20a8-2324-b2df-8578-532d659b7874undefined3DUNKNOWNundefined3D44551&ex-fch=416613&ex-src=www.bmw.es&ex-hargs=vundefined3Bcundefined3Bp%3D3F1A20A8-2324-B2DF-8578-532D659B7874' + '&cb=' + a); _pix.setAttribute('id','_pix_id_3f1a20a8-2324-b2df-8578-532d659b7874'); document.body.appendChild(_pix);}
+</script><iframe src="./iu3.html" id="_pix_id_3f1a20a8-2324-b2df-8578-532d659b7874" style="display: none;"></iframe>
+  
+
+</body></html>

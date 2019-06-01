@@ -1,0 +1,118 @@
+@import 'reset'
+
+body
+    background-image: url('../img/slider/car1.jpg')
+    background-repeat: no-repeat
+    font-family: Arial
+
+.header-page
+    display: flex
+    justify-content: space-between
+    max-width: 100%
+    position: sticky
+    &__naveg
+        display: flex
+        justify-content: space-between
+        align-items: center
+        flex-grow: 1
+        margin-left: 30px
+        border-style: solid;
+        border-bottom-width: 1px
+        border-color: white;
+
+    &__naveg ul li
+        display: flex
+        display: inline
+        padding: 20px
+
+    &__naveg ul li:hover
+        border-style: solid;
+        border-bottom-width: 1px
+        border-color: blue;
+
+    &__links
+        display: flex
+        flex-grow: 1
+        height: auto
+    
+    &__links a 
+        color: white
+        text-decoration: none
+
+    &__searchuser
+        display: flex
+
+    &__searchuser img
+        width: 23px 
+
+    &__logo
+        padding: 7px
+        margin-left: 20px
+        padding-right: 40px
+
+    &__logo img 
+        width: 90px
+
+.content-page 
+    display: flex
+    justify-content: flex-start
+    &__head
+        display: flex
+        justify-content: flex-start
+        flex-direction: column
+        margin-top: 280px
+        margin-left: 50px
+        width: 90%
+    &__head span
+        font-size: 70px
+        color: white;
+    &__head button
+        width: 280px
+        font-size: 14px
+        padding: 16px
+        background-color: #0B53B5;
+        color: white;
+        border-style: none;
+
+.footer-page 
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: white
+    height: 90px
+    position: sticky
+    top: 0px
+
+    &__links
+        display: flex
+        justify-content: center
+        font-size: 12px
+
+    &__links ul
+        display: flex
+        align-items: baseline
+    
+    &__links ul li
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        padding: 40px
+        padding-top: 10px
+        padding-bottom: 0px;
+
+    &__links a 
+        color: black;
+        text-decoration: none;
+        margin-top: 10px
+
+    &__links img 
+        width: 30px
+        
+
+
+
+
+
+
+
